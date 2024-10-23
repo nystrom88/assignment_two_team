@@ -1,23 +1,25 @@
-*{
+body{
     background-color: #212529;
 }
 
+
 .navbar{
     padding-top: 1rem;
-    padding-bottom:3rem ;
+    padding-bottom:2rem ;
     background-color: #343a40;
-    color: white;
+   
 }
 
 .navbar_title{
-    background-color:#343a40 ;
+    color: white;
 }
 
 
 .section_coach{
-    height: 3rem;
-    width: 200px;
-    background-color: #343a40;
-    border-radius: 5px;
+    color: white;
 }
 
+.section_coach--ange{
+    height: 5rem;
+    width: 100%;
+}
