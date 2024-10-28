@@ -1,5 +1,7 @@
 body{
     background-color: #212529;
+    height: 100vh;
+    width: 100%;
 }
 
 
@@ -7,19 +9,85 @@ body{
     padding-top: 1rem;
     padding-bottom:2rem ;
     background-color: #343a40;
-   
+    width: 100%;
 }
 
 .navbar_title{
     color: white;
 }
 
-
-.section_coach{
+a:link, a:visited {
+    text-decoration: none;
     color: white;
 }
 
-.section_coach--ange{
-    height: 5rem;
-    width: 100%;
+.navbar_list{
+    display: flex;
+    justify-content:start;
+    color: white;
+    list-style:none;
+    
+}
+
+
+.section_coach{
+   color: white;
+   padding: 1.5rem;
+}
+
+
+.section_coach--box{
+    width:20%;
+    height: 270px;
+    border-radius: 10px;
+    background-color:#343a40;
+}
+
+.ange_img-head{
+    display: flex;
+    justify-content: center;
+}
+
+.ange_img{
+    height: 150px;
+    width: 150px;
+}
+
+.ange_grid--box{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    background-color: #495057;
+    gap: 1rem;
+    border-radius: 10px;
+    
+}
+
+.cardinfo_name{
+    text-align: center;
+    grid-column: 1/3;
+}
+
+.cardinfo_postition{
+    text-align: center;
+    grid-column: 1/3;
+    grid-row: 2;
+}
+
+.cardinfo_nationality{
+    text-align: center;
+    grid-column: 1/3;
+    grid-row:3;
+}
+
+.cardinfo_country{
+    display: flex;
+    justify-content: center;
+    grid-column: 2;
+    grid-row:3;
+}
+
+.cardinfo_australia{
+    height: 30px;
+    width: 30px;
 }
