@@ -4,7 +4,6 @@ body{
     width: 100%;
 }
 
-
 .navbar{
     padding-top: 1rem;
     padding-bottom:2rem ;
@@ -26,41 +25,47 @@ a:link, a:visited {
     justify-content:start;
     color: white;
     list-style:none;
-    
 }
-
 
 .section_coach{
    color: white;
    padding: 1.5rem;
 }
 
+.section_coach--flex{
+    display: flex;
+}
 
-.section_coach--box{
-    width:20%;
+.section_coach--gridbox{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+}
+
+.section_coach--card{
     height: 270px;
+    width: 300px;
     border-radius: 10px;
     background-color:#343a40;
 }
 
-.ange_img-head{
+.coach_img--head{
     display: flex;
     justify-content: center;
 }
 
-.ange_img{
+.coach_img{
     height: 150px;
     width: 150px;
 }
 
-.ange_grid--box{
+.coach_grid--box{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(3,1fr);
     background-color: #495057;
     gap: 1rem;
     border-radius: 10px;
-    
 }
 
 .cardinfo_name{
@@ -82,12 +87,34 @@ a:link, a:visited {
 
 .cardinfo_country{
     display: flex;
-    justify-content: center;
+    justify-content:end;
     grid-column: 2;
     grid-row:3;
+}
+
+.coach_img--head{
+    display: flex;
+    justify-content: center;
 }
 
 .cardinfo_australia{
     height: 30px;
     width: 30px;
+}
+
+.cardinfo_england{
+    height: 30px;
+    width: 30px;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .section_coach--gridbox{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section_coach--ange{
+
+    }
 }
