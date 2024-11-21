@@ -1,95 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Totthenham Hotspurs</title>
-    <link rel="stylesheet" href="/src/css/reset.css">
-    <link rel="stylesheet" href="/src/css/index.css">
-</head>
-<body>
+    <link rel="stylesheet" href="/src/css/reset.css" />
+    <link rel="stylesheet" href="/src/css/variabel.css" />
+    <link rel="stylesheet" href="/src/css/index.css" />
+  </head>
+  <body>
     <header>
-        <nav class="navbar">
-            <h1 class="navbar_title">Totthenham Hotspurs Squad</h1>
-            <ul class="navbar_list">
-                <li>
-                    <a href="#">Tabel</a>
-                </li>
-            </ul>
-        </nav>
+      <nav class="navbar">
+        <h1 class="navbar_title">Totthenham Hotspurs Squad</h1>
+        <ul class="navbar_list">
+          <li>
+            <a href="#">Tabel</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <!-- Thise is the section with the coaching staff -->
-        <section class="section_coach">
-            <h2>Coaches</h2>
-            <div class="section_coach--flex">
-            <div class="section_coach--gridbox">
-                <div class="section_coach--card">
-                    <div class="coach_img--head">
-                        <img class="coach_img" src="/src/assets/img/coaches/Angelos_Postecoglou.webp" alt="Ange Postecoglou">
-                    </div>
-                    <div class="coach_grid--box">
-                        <div class="cardinfo_name">
-                            <h2>Ange Postecoglou</h2>
-                        </div>
-                        <div class="cardinfo_postition">
-                            <h2>Head Coach</h2>
-                        </div>
-                        <div class="cardinfo_nationality">
-                            <h2>Nationality</h2>
-                        </div>
-                        <div class="cardinfo_country">
-                            <img class="cardinfo_australia" src="/src/assets/img/country/australia.png" alt="Australia Flag">
-                        </div>
-                    </div>
+      <!-- Thise is the section with the coaching staff -->
+      <section class="section__coach">
+        <h2>Coaching Staff</h2>
+        <div class="section__coach-flex">
+          <div class="section__coach-gridbox">
+            <div class="section__coach-card">
+              <div class="player__img-head">
+                <img
+                  class="player__img"
+                  src="/src/assets/img/coaches/Angelos_Postecoglou.webp"
+                  alt="Ange Postecoglou"
+                />
+              </div>
+              <div class="coach__grid-box">
+                <div class="cardinfo__name">
+                  <h2>Ange Postecoglou</h2>
                 </div>
-
-
-                <div class="section_coach--card">
-                    <div class="coach_img--head">
-                        <img class="coach_img" src="/src/assets/img/coaches/ryan_mason.webp" alt="Rayn Mason">
-                    </div>
-                    <div class="coach_grid--box">
-                        <div class="cardinfo_name">
-                            <h2>Ryan Mason</h2>
-                        </div>
-                        <div class="cardinfo_postition">
-                            <h2>Assistant Coach</h2>
-                        </div>
-                        <div class="cardinfo_nationality">
-                            <h2>Nationality</h2>
-                        </div>
-                        <div class="cardinfo_country">
-                            <img class="cardinfo_england" src="/src/assets/img/country/england.png" alt="England Flag">
-                        </div>
-                    </div>
+                <div class="cardinfo__postition">
+                  <h2>Head Coach</h2>
                 </div>
-
-                <div class="section_coach--card">
-                    <div class="coach_img--head">
-                        <img class="coach_img" src="/src/assets/img/coaches/matt_wlles.webp" alt="Matt Welles">
-                    </div>
-                    <div class="coach_grid--box">
-                        <div class="cardinfo_name">
-                            <h2>Matt Welles</h2>
-                        </div>
-                        <div class="cardinfo_postition">
-                            <h2>Assistant Coach</h2>
-                        </div>
-                        <div class="cardinfo_nationality">
-                            <h2>Nationality</h2>
-                        </div>
-                        <div class="cardinfo_country">
-                            <img class="cardinfo_england" src="/src/assets/img/country/england.png" alt="England Flag">
-                        </div>
-                    </div>
+                <div class="cardinfo__nationality">
+                  <h2>Nationality</h2>
                 </div>
-
-
+                <div class="cardinfo__country">
+                  <img
+                    class="cardinfo__flag"
+                    src="/src/assets/svg/australia-svgrepo-com.svg"
+                    alt="Flag of Australia "
+                  />
+                </div>
+              </div>
             </div>
+            <!-- _______________________________ -->
+            <div class="section__coach-card">
+              <div class="player__img-head">
+                <img
+                  class="player__img"
+                  src="/src/assets/img/coaches/ryan_mason.webp"
+                  alt="Rayn Mason"
+                />
+              </div>
+              <div class="coach__grid-box">
+                <div class="cardinfo__name">
+                  <h2>Ryan Mason</h2>
+                </div>
+                <div class="cardinfo__postition">
+                  <h2>Assistant Coach</h2>
+                </div>
+                <div class="cardinfo__nationality">
+                  <h2>Nationality</h2>
+                </div>
+                <div class="cardinfo__country">
+                  <img
+                    class="cardinfo__flag"
+                    src="/src/assets/svg/england-svgrepo-com.svg"
+                    alt="Flag of England "
+                  />
+                </div>
+              </div>
             </div>
-        </section>
+
+            <!-- _______________________________ -->
+            <div class="section__coach-card">
+              <div class="player__img-head">
+                <img
+                  class="player__img"
+                  src="/src/assets/img/coaches/matt_wlles.webp"
+                  alt="Matt Welles"
+                />
+              </div>
+              <div class="coach__grid-box">
+                <div class="cardinfo__name">
+                  <h2>Matt Welles</h2>
+                </div>
+                <div class="cardinfo__postition">
+                  <h2>Assistant Coach</h2>
+                </div>
+                <div class="cardinfo__nationality">
+                  <h2>Nationality</h2>
+                </div>
+                <div class="cardinfo__country">
+                  <img
+                    class="cardinfo__flag"
+                    src="/src/assets/svg/england-svgrepo-com.svg"
+                    alt="England Flag"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- GoalKeepers players -->
+      <section class="section__goalkeepers">
+        <h2>Goalkeepers</h2>
+        <div class="section__goalkeepers-flex">
+            <div class="section__goalkeeper-gridbox">
+                <div class="section__goalkeepers-card">
+                    <div class="player__img-head">
+                    <img
+                        class="player__img"
+                        src="/src/assets/img/keepers/vivario.png"
+                        alt="Guglielmo Vicario"
+                    />
+                    </div>
+                    <div class="player__grid-box">
+                        <div class="cardinfo__name-player">
+                            <h2>Guglielmo Vicario</h2>
+                        </div>
+                    <div class="cardinfo__postition-player">
+                        <p>Keeper</p>
+                    </div>
+                    <div class="cardinfo__jersy-player">
+                        <p>Shirt #1</p>
+                    </div>
+                    <div class="cardinfo__hight-player">
+                        <p>194CM</p>
+                    </div>
+                    <div class="cradinfo__statistic">
+                        <p>Clean Sheet:2</p>
+                    </div>
+                    <div class="cardinfo__nationality-player">
+                        <p>Nationality</p>
+                    </div>
+                    <div class="cardinfo__country-player">
+                        <img
+                            class="cardinfo__flag"
+                            src="/src/assets/svg/flag-for-italy-svgrepo-com.svg"
+                            alt="Italiy Flag"
+                        />
+                </div>
+              </div>
+            </div>
+
+            <div class="section__goalkeepers-card">
+                <div class="player__img-head">
+                <img
+                    class="player__img"
+                    src="/src/assets/img/keepers/hs1ZqvHc2_Y7E87_5ww2WkLoGVXiRDAH0Eb8JyAe_r_ayMUlsP78N_BNmf-J2VDDCnsDfQOmqBTqbHcNiYd7Ag.webp"
+                    alt="Fraser Foster"
+                />
+                </div>
+                <div class="player__grid-box">
+                    <div class="cardinfo__name-player">
+                        <h2>Fraser Foster</h2>
+                    </div>
+                <div class="cardinfo__postition-player">
+                    <p>Keeper</p>
+                </div>
+                <div class="cardinfo__jersy-player">
+                    <p>Shirt #20</p>
+                </div>
+                <div class="cardinfo__hight-player">
+                    <p>201CM</p>
+                </div>
+                <div class="cradinfo__statistic">
+                    <p>Clean Sheet:0</p>
+                </div>
+                <div class="cardinfo__nationality-player">
+                    <p>Nationality</p>
+                </div>
+                <div class="cardinfo__country-player">
+                    <img
+                        class="cardinfo__flag"
+                        src="/src/assets/svg/england-svgrepo-com.svg"
+                        alt="Flag of England"
+                    />
+                </div>
+            </div>
+        </div>
+            <div class="section__goalkeepers-card">
+                <div class="player__img-head">
+                    <img
+                    class="player__img"
+                    src="/src/assets/img/keepers/481383_brandon_austin_20240817012124.png"
+                    alt="Ange Postecoglou"
+                />
+                </div>
+                <div class="player__grid-box">
+                    <div class="cardinfo__name-player">
+                        <h2>Brandon Austin</h2>
+                    </div>
+                <div class="cardinfo__postition-player">
+                    <p>Keeper</p>
+                </div>
+                <div class="cardinfo__jersy-player">
+                    <p>Shirt #40</p>
+                </div>
+                <div class="cardinfo__hight-player">
+                    <p>188CM</p>
+                </div>
+                <div class="cradinfo__statistic">
+                    <p>Clean Sheet:0</p>
+                </div>
+                <div class="cardinfo__nationality-player">
+                    <p>Nationality</p>
+                </div>
+                <div class="cardinfo__country-player">
+                    <img
+                        class="cardinfo__flag"
+                        src="/src/assets/svg/england-svgrepo-com.svg"
+                        alt="Italiy Flag"
+                    />
+            </div>
+        </div>
+      </section>
+
+      <!-- Defendrs players -->
+      <section class="section__defenders">
+        <h2>Goalkeepers</h2>
+        <div class="section__defenders-flex">
+            <div class="section__defenders-gridbox">
+                <div class="section__defenders-card">
+                    <div class="player__img-head">
+                    <img
+                        class="player__img"
+                        src="/src/assets/img/keepers/vivario.png"
+                        alt="Guglielmo Vicario"
+                    />
+                    </div>
+                    <div class="player__grid-box">
+                        <div class="cardinfo__name-player">
+                            <h2>Pedro Porro</h2>
+                        </div>
+                    <div class="cardinfo__postition-player">
+                        <p>Right Back</p>
+                    </div>
+                    <div class="cardinfo__jersy-player">
+                        <p>Shirt #23</p>
+                    </div>
+                    <div class="cardinfo__hight-player">
+                        <p>176CM</p>
+                    </div>
+                    <div class="cradinfo__statistic">
+                        <p>Clean Sheet:2</p>
+                    </div>
+                    <div class="cardinfo__nationality-player">
+                        <p>Nationality</p>
+                    </div>
+                    <div class="cardinfo__country-player">
+                        <img
+                            class="cardinfo__flag"
+                            src="/src/assets/svg/flag-for-italy-svgrepo-com.svg"
+                            alt="Italiy Flag"
+                        />
+                </div>
+              </div>
+            </div>
+      </section>
     </main>
     <footer></footer>
-</body>
+  </body>
 </html>

@@ -1,120 +1,244 @@
-body{
-    background-color: #212529;
-    height: 100vh;
-    width: 100%;
+@font-face {
+  font-family: roboto-bold;
+  src: url(/src/assets/fonts/Roboto/Roboto-Black.ttf);
 }
 
-.navbar{
-    padding-top: 1rem;
-    padding-bottom:2rem ;
-    background-color: #343a40;
-    width: 100%;
+body {
+  background-color: #212529;
+  height: 100vh;
+  width: 100%;
+  font-family: roboto-bold;
 }
 
-.navbar_title{
-    color: white;
+p {
+  font-size: 20px;
 }
 
-a:link, a:visited {
-    text-decoration: none;
-    color: white;
+.navbar {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  background-color: #343a40;
+  width: 100%;
 }
 
-.navbar_list{
-    display: flex;
-    justify-content:start;
-    color: white;
-    list-style:none;
+.navbar_title {
+  color: white;
 }
 
-.section_coach{
-   color: white;
-   padding: 1.5rem;
+a:link,
+a:visited {
+  text-decoration: none;
+  color: white;
 }
 
-.section_coach--flex{
-    display: flex;
+.navbar_list {
+  display: flex;
+  justify-content: start;
+  color: white;
+  list-style: none;
 }
 
-.section_coach--gridbox{
+.section__coach {
+  color: white;
+  padding: var(--spacing-large);
+}
+
+.section__coach-flex {
+  display: flex;
+}
+
+.section__coach-gridbox {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.section__coach-card {
+  height: 100%;
+  width: 300px;
+  border-radius: 10px;
+  background-color: #343a40;
+}
+
+.coach__grid-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  background-color: #495057;
+  gap: 1rem;
+  border-radius: 10px;
+}
+
+.player__img-head {
+  display: flex;
+  justify-content: center;
+}
+
+.player__img {
+  height: 150px;
+  width: 150px;
+}
+
+.player__img-head {
+  display: flex;
+  justify-content: center;
+}
+
+.cardinfo__name {
+  text-align: center;
+  grid-column: 1/3;
+}
+
+.cardinfo__postition {
+  text-align: center;
+  grid-column: 1/3;
+  grid-row: 2;
+}
+
+.cardinfo__nationality {
+  text-align: center;
+  grid-column: 1/3;
+  grid-row: 3;
+}
+
+.cardinfo__country {
+  display: flex;
+  justify-content: end;
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.cardinfo__flag {
+  height: 30px;
+  width: 30px;
+}
+
+.section__goalkeepers {
+  color: white;
+  padding: var(--spacing-large);
+}
+
+.section__goalkeepers-flex {
+  display: flex;
+}
+
+.section__goalkeeper-gridbox {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.section__goalkeepers-card {
+  height: 100%;
+  width: 300px;
+  border-radius: 10px;
+  background-color: #343a40;
+}
+
+.player__grid-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  background-color: #495057;
+  gap: 1rem;
+  border-radius: 10px;
+}
+
+.cardinfo__name-player {
+  grid-column: 1/3;
+  text-align: center;
+}
+
+.cardinfo__jersy-player {
+  grid-column: 1/2;
+  grid-row: 2;
+  text-align: center;
+}
+
+.cardinfo__postition-player {
+  grid-column: 2/3;
+  grid-row: 2;
+  text-align: center;
+}
+
+.cardinfo__hight-player {
+  grid-column: 1/2;
+  grid-row: 3;
+  text-align: center;
+}
+
+.cardinfo__nationality-player {
+  grid-column: 1/3;
+  grid-row: 4;
+  text-align: center;
+}
+
+.cardinfo__country-player {
+  grid-column: 2/3;
+  grid-row: 4;
+  text-align: center;
+}
+
+.section__defenders {
+  color: white;
+  padding: var(--spacing-large);
+}
+
+.section__defenders-flex {
+  display: flex;
+}
+
+.section__defenders-gridbox {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.section__defenders-card {
+  height: 100%;
+  width: 300px;
+  border-radius: 10px;
+  background-color: #343a40;
+}
+
+.player__grid-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  background-color: #495057;
+  gap: 1rem;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 1300px) {
+  .section__coach-gridbox {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
 }
 
-.section_coach--card{
-    height: 270px;
-    width: 300px;
-    border-radius: 10px;
-    background-color:#343a40;
-}
-
-.coach_img--head{
-    display: flex;
-    justify-content: center;
-}
-
-.coach_img{
-    height: 150px;
-    width: 150px;
-}
-
-.coach_grid--box{
+@media screen and (max-width: 900px) {
+  .section__coach-gridbox {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 5rem;
+  }
+  .section__coach-card {
+    display: flex;
+    height: 100px;
+    width: 500px;
+  }
+
+  .coach__grid-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     background-color: #495057;
-    gap: 1rem;
+    gap: 0.5rem;
     border-radius: 10px;
-}
-
-.cardinfo_name{
-    text-align: center;
-    grid-column: 1/3;
-}
-
-.cardinfo_postition{
-    text-align: center;
-    grid-column: 1/3;
-    grid-row: 2;
-}
-
-.cardinfo_nationality{
-    text-align: center;
-    grid-column: 1/3;
-    grid-row:3;
-}
-
-.cardinfo_country{
-    display: flex;
-    justify-content:end;
-    grid-column: 2;
-    grid-row:3;
-}
-
-.coach_img--head{
-    display: flex;
-    justify-content: center;
-}
-
-.cardinfo_australia{
-    height: 30px;
-    width: 30px;
-}
-
-.cardinfo_england{
-    height: 30px;
-    width: 30px;
-}
-
-
-@media screen and (max-width: 1024px) {
-    .section_coach--gridbox{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .section_coach--ange{
-
-    }
+    width: 100%;
+    height: 10rem;
+  }
 }
