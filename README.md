@@ -1,4 +1,6 @@
-Tottenham Hotspurs FC Squad list
+#Tottenham Hotspurs FC Squad list
+
+##Description
 
 This is the second assignment where I had to create a team sheet from any sports team. I chose Tottenham Hotspurs FC, in this assignment, I had to make 15 player cards with stats and information(Name, shirt number, position, height, goal and assist combined stats and their nationality.
 
